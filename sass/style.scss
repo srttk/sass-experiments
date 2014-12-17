@@ -1,0 +1,18 @@
+$bgcolor:#f56;
+$bglight:#dedede;
+$brandColor:#c6538c;
+body{
+	
+	
+}
+.wrap{
+	width: 960px;
+	margin: auto;
+	background-color:$bgcolor;
+	padding: 0px 3px;
+}
+h1{
+	background-color: $bglight;
+	color:$brandColor;
+	padding: 5px;
+}
