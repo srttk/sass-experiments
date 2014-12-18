@@ -1,18 +1,65 @@
 $bgcolor:#f56;
 $bglight:#dedede;
 $brandColor:#c6538c;
+/* Import */
+@import 'reset';
 body{
-	
-	
+	font: 100% Helvetica, sans-serif;
+	min-height: 100%;
 }
 .wrap{
-	width: 960px;
+	width: 65%;
 	margin: auto;
 	background-color:$bgcolor;
 	padding: 0px 3px;
+	margin-top:5px;
+	min-height: 600px;
 }
+
+/* Neting */
 h1{
 	background-color: $bglight;
 	color:$brandColor;
 	padding: 5px;
+	
+		font-family: Arial;
+		small{
+			color:#bbb;
+			font-size: 14px;
+		}
+	
+}
+
+/* Mixin Example  */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.para{
+	margin-top:2px;
+	margin-bottom: 2px;
+	text-align: center;
+	background-color: #59f;
+	@include border-radius(5px);
+}
+.alert{
+	background-color: #fff;
+	color: #f00;
+	@include border-radius(3px);
+	margin: 1px 1px;
+	padding: 2px;
+}
+
+.success{
+	@extend .alert;
+	color: green;
+	&:hover{
+		color:blue;
+	}
+	&.big{
+		font-size: 56px;
+	}
 }
