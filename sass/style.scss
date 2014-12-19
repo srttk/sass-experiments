@@ -63,3 +63,18 @@ h1{
 		font-size: 56px;
 	}
 }
+.nav{
+	list-style: none;
+	background-color: #695;
+}
+.nav li{
+	display: inline-block;
+	/*background-color: yellow;*/
+	&:hover{
+		background-color:red;
+	}
+}
+
+.table{
+	
+}
